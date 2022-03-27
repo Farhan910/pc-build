@@ -53,20 +53,6 @@
 // })
 
 
-
-function onClick(clickId, updateId,price){
-    document.getElementById(clickId).addEventListener('click', function(){
-        updatePrice(updateId,price);
-        
-    });
-}
-
-onClick  ('sixteenGB', 'memory-cost', 300);
-onClick  ('eightGB', 'memory-cost', 0);
-onClick  ('ssd1', 'storage-cost', 0);
-onClick  ('ssd2', 'storage-cost', 200);
-
-
 function updatePrice(itemId, price) {
   const memoryCost = document.getElementById(itemId);
   memoryCost.innerText = price;
@@ -83,3 +69,20 @@ function updatePrice(itemId, price) {
   total.innerText = totalPrice;
 
 }
+
+
+
+function onClick(clickId, updateId,price){
+    document.getElementById(clickId).addEventListener('click', function(){
+        updatePrice(updateId,price);
+        
+    });
+}
+
+onClick  ('sixteenGB', 'memory-cost', 300);
+onClick  ('eightGB', 'memory-cost', 0);
+onClick  ('ssd1', 'storage-cost', 0);
+onClick  ('ssd2', 'storage-cost', 200);
+
+
+
